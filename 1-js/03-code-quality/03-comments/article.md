@@ -4,11 +4,11 @@
 
 Ние ги ползваме да обясним как и защо работи кодът.
 
-На пръв поглед , коментарите могът да бъдат очевидни , но начинаещите в програмирането често ги ползват грешно.
+На пръв поглед , коментарите могат да бъдат очевидни , но начинаещите в програмирането често ги ползват грешно.
 
 ## Лоши коментари
 
-Начинаещите са склонни да ползват коментарите за да обеснят "какво става в кода". Като този:
+Начинаещите са склонни да използват коментарите за да обяснят "какво става в кода". Като този:
 
 ```js
 // Този код ще прави тези неща (...) и тези неща (...)
@@ -67,7 +67,7 @@ function isPrime(n) {
 
 Сега ние можем да разберем кодът лесно. Самата  функция се превръща в коментар. Такъв код се нарича *самодокументиращ се*
 
-### Рецепта: съсздавайте функции
+### Рецепта: създавайте функции
 
 Ако имаме толкова дълъг код:
 
@@ -111,15 +111,15 @@ function addJuice(container) {
 }
 ```
 
-Once again, functions themselves tell what's going on. There's nothing to comment. And also the code structure is better when split. It's clear what every function does, what it takes and what it returns.
+Тук също не са необходими  коментари, фукнциите сами по себе си казват какво правят. Няма какво да се коментира.  Също така структурата на кода е по - добра разделена .  Ясно е какво прави всяка една функция ,  какъв вход приема и какво връща.
 
-In reality, we can't totally avoid "explanatory" comments. There are complex algorithms. And there are smart "tweaks" for purposes of optimization. But generally we should try to keep the code simple and self-descriptive.
+В действителност не можем напълно да избегнем "описателните" коментари. Съществуват сложни алгоритми. И има трикове за Но като цяло трябва да се опитаме да запазим кода прост и самодокументиращ се.
 
-## Good comments
+## Добри коментари
 
-So, explanatory comments are usually bad. Which comments are good?
+Така щом, описателните коментари обикновено са лоши. Кои коментари са добри?
 
-Describe the architecture
+Опишете архитектурата
 : Provide a high-level overview of components, how they interact, what's the control flow in various situations... In short -- the bird's eye view of the code. There's a special language [UML](http://wikipedia.org/wiki/Unified_Modeling_Language) to build high-level architecture diagrams explaining the code. Definitely worth studying.
 
 Document function parameters and usage
