@@ -1,30 +1,30 @@
-# Comments
+# Коментари
 
-As we know from the chapter <info:structure>, comments can be single-line: starting with `//` and multiline: `/* ... */`.
+Както знаем от темата <info:structure>, коментарите могат да бъдат едноредови започващи с `//` или многоредови : `/* ... */`.
 
-We normally use them to describe how and why the code works.
+Ние ги ползваме да обясним как и защо работи кодът.
 
-At first sight, commenting might be obvious, but novices in programming often use them wrongly.
+На пръв поглед , коментарите могът да бъдат очевидни , но начинаещите в програмирането често ги ползват грешно.
 
-## Bad comments
+## Лоши коментари
 
-Novices tend to use comments to explain "what is going on in the code". Like this:
+Начинаещите са склонни да ползват коментарите за да обеснят "какво става в кода". Като този:
 
 ```js
-// This code will do this thing (...) and that thing (...)
-// ...and who knows what else...
-very;
-complex;
-code;
+// Този код ще прави тези неща (...) и тези неща (...)
+// ...и кой ли знае какво още...
+много;
+сложен;
+код;
 ```
 
-But in good code, the amount of such "explanatory" comments should be minimal. Seriously, the code should be easy to understand without them.
+Но  в качественият код , количеството от тези "обясняващи" коментари трябва да бъде минимален. Кодът трябва да бъде лесен за разбиране.
 
-There's a great rule about that: "if the code is so unclear that it requires a comment, then maybe it should be rewritten instead".
+Има страхотно правило за това: "Ако кодът е неясен и изисква коментар, тогава може би трябва да се пренапише".
 
-### Recipe: factor out functions
+### Рецепта: разделяйте кода на функции
 
-Sometimes it's beneficial to replace a code piece with a function, like here:
+Понякога е  полезно да заменим дадено парче код със функция, ето така:
 
 ```js
 function showPrimes(n) {
@@ -32,7 +32,7 @@ function showPrimes(n) {
   for (let i = 2; i < n; i++) {
 
 *!*
-    // check if i is a prime number
+    // проверяваме  дали i е просто число
     for (let j = 2; j < i; j++) {
       if (i % j == 0) continue nextPrime;
     }
@@ -43,7 +43,7 @@ function showPrimes(n) {
 }
 ```
 
-The better variant, with a factored out function `isPrime`:
+По - добрият вариант е като използваме отделна функция за `isPrime`:
 
 
 ```js
@@ -65,21 +65,21 @@ function isPrime(n) {
 }
 ```
 
-Now we can understand the code easily. The function itself becomes the comment. Such code is called *self-descriptive*.
+Сега ние можем да разберем кодът лесно. Самата  функция се превръща в коментар. Такъв код се нарича *самодокументиращ се*
 
-### Recipe: create functions
+### Рецепта: съсздавайте функции
 
-And if we have a long "code sheet" like this:
+Ако имаме толкова дълъг код:
 
 ```js
-// here we add whiskey
+// тук добавяме уиски
 for(let i = 0; i < 10; i++) {
   let drop = getWhiskey();
   smell(drop);
   add(drop, glass);
 }
 
-// here we add juice
+// тук добавяме сок
 for(let t = 0; t < 3; t++) {
   let tomato = getTomato();
   examine(tomato);
@@ -90,7 +90,7 @@ for(let t = 0; t < 3; t++) {
 // ...
 ```
 
-Then it might be a better variant to refactor it into functions like:
+Тогава ще бъде по-добре да рефакторирате кода във функции по този начин:
 
 ```js
 addWhiskey(glass);
