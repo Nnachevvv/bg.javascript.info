@@ -160,21 +160,21 @@ Document function parameters and usage
 Any subtle features of the code? Where they are used?
 : If the code has anything subtle and counter-intuitive, it's definitely worth commenting.
 
-## Summary
+## Обобщение
 
-An important sign of a good developer is comments: their presence and even their absence.
+Важен знак, че един разработчик е добър са коментарите: техната прецизност и дори отсъствието им.
 
-Good comments allow us to maintain the code well, come back to it after a delay and use it more effectively.
+Добрите коментари ни позволяват да поддържаме добре кода, и като се върнем към него след време да го използваме по ефективно.
 
-**Comment this:**
+**Коментирайте това:**
 
 - Overall architecture, high-level view.
 - Function usage.
 - Important solutions, especially when not immediately obvious.
 
-**Avoid comments:**
+**Избягвайте коменатри:**
 
-- That tell "how code works" and "what it does".
-- Put them in only if it's impossible to make the code so simple and self-descriptive that it doesn't require them.
+- Такива които ви казват " как работи кода " и "какво прави" .
+- Ползвайте ги само тогава ако е невъзможно да направите кода лесен за четене и самоопистален, че да не ги изисква ..
 
-Comments are also used for auto-documenting tools like JSDoc3: they read them and generate HTML-docs (or docs in another format).
+Коментарите се ползват като инструменти за автоматично документиране като JSDoc3: те ги чеът и генерират HTML-docs ( или docs във друг формат).
