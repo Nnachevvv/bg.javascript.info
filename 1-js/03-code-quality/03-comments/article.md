@@ -145,10 +145,10 @@ Document function parameters and usage
 
     Also, there are tools like [JSDoc 3](https://github.com/jsdoc3/jsdoc) that can generate HTML-documentation from the comments. You can read more information about JSDoc at <http://usejsdoc.org/>.
 
-Why is the task solved this way?
-: What's written is important. But what's *not* written may be even more important to understand what's going on. Why is the task solved exactly this way? The code gives no answer.
+Защо задачата е решена по този начин?
+: Това което е написано, е важно. Но това, което *не* е написано може да бъде още по-важно за да разберете какво се случва. Защо задачата е решена по този начин? Кодът дава този отговор.
 
-    If there are many ways to solve the task, why this one? Especially when it's not the most obvious one.
+    Ако има много начини за решение на тази задача, защо точно този? Особено като този не е от най-очевидтните.
 
     Without such comments the following situation is possible:
     1. You (or your colleague) open the code written some time ago, and see that it's "suboptimal".
