@@ -1,17 +1,17 @@
 
-# Objects
+# Обекти
 
-As we know from the chapter <info:types>, there are seven data types in JavaScript. Six of them are called "primitive", because their values contain only a single thing (be it a string or a number or whatever).
+Както знаем  от раздела за <info:types>, има седем типа данни в JavaScript. Шест от тях се наричат "примитивни", защото тяхната стойност се състой от едно единствено нещо (било то стрнг , число или каквото и да е).
 
-In contrast, objects are used to store keyed collections of various data and more complex entities. In JavaScript, objects penetrate almost every aspect of the language. So we must understand them first before going in-depth anywhere else.
+За разлика, от тях обектите се използват за съхранение на колекции  от различни стойности или по-сложни единици. В JavaScript, обектите се изпозлват много често във почти всеки аспект на езика. Затова първо трябва да ги разберем, преди да навлезем по-навътре в езика.
 
-An object can be created with figure brackets `{…}` with an optional list of *properties*. A property is a "key: value" pair, where `key` is a string (also called a "property name"), and `value` can be anything.
+Обект може да бъде създаден със фигурни скоби  `{…}` с незадължителен списък от *свойства*. Свойството е двойка "ключ: стойност" , където `ключа` е стринг (също наричан "име на свойство"), и `стойноста` може да бъде всичко.
 
-We can imagine an object as a cabinet with signed files. Every piece of data is stored in its file by the key. It's easy to find a file by its name or add/remove a file.
+Може да си представим обекта  под формата на папка с подписани файлове. Всеки елемент от данни се съхранява под собствена папка, върху която е написан ключът. Тогава е лесно да намерим, изтрием или добавим папка спрямо ключа.
 
 ![](object.svg)
 
-An empty object ("empty cabinet") can be created using one of two syntaxes:
+Празен обект("empty cabinet") може да бъде създаден с помоща на следните два синтаксиса:
 
 ```js
 let user = new Object(); // "object constructor" syntax
